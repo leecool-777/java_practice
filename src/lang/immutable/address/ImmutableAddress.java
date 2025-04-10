@@ -2,7 +2,7 @@ package lang.immutable.address;
 
 public class ImmutableAddress {
 
-    private final String value;
+    private final String value; //final처리
 
     public ImmutableAddress(String value) {
         this.value = value;
@@ -15,11 +15,8 @@ public class ImmutableAddress {
                 '}';
     }
 
-    public String getValue() {
+    public String getValue() { //setter 제거
         return value;
     }
 
-//    public void setValue(String value) {
-//        this.value = value;
-//    }
 }
